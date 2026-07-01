@@ -36,13 +36,13 @@ export default function Footer() {
             {/* Minimalist Text-Based Social Links */}
             <div className="flex items-center gap-4 font-mono text-[10px] font-bold uppercase tracking-wider">
               <a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors">
-                // Facebook
+                Facebook
               </a>
               <a href={SITE.social.youtube} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors">
-                // Youtube
+                Youtube
               </a>
               <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors">
-                // Instagram
+                Instagram
               </a>
             </div>
           </div>
