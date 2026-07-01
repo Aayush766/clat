@@ -71,7 +71,7 @@ export default function Results() {
                     <Icon className="h-4 w-4 stroke-[2.5]" />
                   </div>
                   <span className="text-[10px] font-bold text-slate-300 group-hover:text-slate-400 font-mono">
-                    // ACTV
+                    ACTV
                   </span>
                 </div>
                 <div className="mt-6 space-y-0.5">

@@ -61,7 +61,7 @@ export default function Testimonials() {
                     ))}
                   </div>
                   <span className="font-mono text-[9px] font-bold text-slate-300 uppercase tracking-widest">
-                    // verified_review
+                   verified_review
                   </span>
                 </div>
 
