@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-navy-900 antialiased;
+}
+
+::selection {
+  @apply bg-gold-300 text-navy-900;
+}
+
+.container-px {
+  @apply px-5 sm:px-8 lg:px-12;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(15, 36, 68, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-heading-eyebrow {
+  @apply inline-block text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-gold-600 mb-3;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3.5 text-sm sm:text-base font-semibold text-navy-900 shadow-soft transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-navy-800 bg-transparent px-6 py-3.5 text-sm sm:text-base font-semibold text-navy-800 transition-all duration-300 hover:bg-navy-800 hover:text-white;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/70 bg-white/10 px-6 py-3.5 text-sm sm:text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-navy-900;
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-soft border border-navy-100/60;
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee-track {
+    animation: none;
+  }
+}
