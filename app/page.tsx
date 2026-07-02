@@ -1,4 +1,3 @@
-// app/page.tsx
 import Link from "next/link";
 import { courseSchemas } from "@/lib/schema";
 import Navbar from "@/components/Navbar";
@@ -43,7 +42,7 @@ export default function Home() {
       </nav>
 
       {/* Premium Framed Layout Grid */}
-      <main className="relative space-y-24 md:space-y-36 pb-24 overflow-hidden">
+      <main className="relative space-y-20 md:space-y-28 pb-24 overflow-hidden bg-white">
         
         {/* Hero & Immediate Social Proof Zone */}
         <section className="relative bg-gradient-to-b from-slate-50 via-white to-transparent">
@@ -56,15 +55,13 @@ export default function Home() {
         </section>
 
         {/* Academic Value Proposition */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-w">
           <WhyUs />
         </section>
 
-        {/* Premium Dark Theme Alternation for Core Offerings */}
-        <section className="w-full bg-[#0f2444] text-white py-24 my-12 rounded-[2rem] md:rounded-[3rem] max-w-[96rem] mx-auto shadow-2xl shadow-[#0f2444]/10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Courses />
-          </div>
+        {/* Core Educational Offerings (Now flawlessly following the light theme flow) */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
+          <Courses />
         </section>
 
         {/* Elite Human Element */}
@@ -93,13 +90,14 @@ export default function Home() {
           <FAQ />
         </section>
 
+        {/* Editorial Insight Grid */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Blog />
         </section>
 
         {/* Conversion / Final Action Matrix */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl border border-slate-100 shadow-xl overflow-hidden bg-white">
+          <div className="rounded-3xl border border-slate-200/60 shadow-xl overflow-hidden bg-white">
             <LocationContact />
           </div>
         </section>
