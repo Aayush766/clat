@@ -71,7 +71,7 @@ export default function EnquiryForm({ variant = "light" }: { variant?: "light" |
           Enquiry Received!
         </h3>
         <p className={`text-xs leading-relaxed font-medium max-w-xs ${isDark ? "text-slate-400" : "text-slate-600"}`}>
-          Our experienced admissions counsellor will reach out within 24 hours. Let's build your legacy!
+          Our experienced admissions counsellor will reach out within 24 hours. Let&apos;s build your legacy!
         </p>
         <button 
           onClick={() => setStatus("idle")} 
